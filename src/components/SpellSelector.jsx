@@ -6,7 +6,7 @@ const SpellSelector = ({setSelectedSpells,selectedSpells}) => {
 
     useEffect(() => {
         async function fetchSpells() {
-            const response = await fetch(`http://localhost:8000/api/hechizos`)
+            const response = await fetch(`https://dndapi-vx9y.onrender.com/api/hechizos`)
             const data = await response.json()
             setSpells(data.hechizos)
             console.log(data.hechizos)

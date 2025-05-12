@@ -23,7 +23,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/api/characters", {
+      const response = await fetch("https://dndapi-vx9y.onrender.com/api/characters", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

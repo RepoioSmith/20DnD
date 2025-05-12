@@ -9,7 +9,7 @@ const ClassSelect = ({ setSelectedClass }) => {
   useEffect(() => {
     async function fetchClasses() {
       try {
-        const response = await fetch('http://localhost:8000/api/clases')
+        const response = await fetch('https://dndapi-vx9y.onrender.com/api/clases')
         if (!response.ok) throw new Error('Error al obtener las clases')
         const data = await response.json()
         setClasses(data.clases)

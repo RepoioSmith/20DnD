@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/characters");
+        const response = await fetch("https://dndapi-vx9y.onrender.com/api/characters");
         if (!response.ok) throw new Error("Network response was not ok");
         const data = await response.json();
         setCharacters(data);
